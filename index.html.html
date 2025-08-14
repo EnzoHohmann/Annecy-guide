@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de Voyage - Annecy Team Brioche</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .category {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .icon {
+            font-size: 1.5rem;
+        }
+        
+        .items-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .item {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .item:hover {
+            border-color: #667eea;
+            transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .item h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .item p {
+            color: #5a6c7d;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+        
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight {
+            background: #667eea;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        
+        .link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .price {
+            background: #e74c3c;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .category {
+                padding: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .items-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🥐 Guide de Voyage - Annecy Team Brioche 🥐</h1>
+        <p>Votre guide complet pour découvrir les merveilles d'Annecy et ses environs</p>
+    </div>
+
+    <div class="container">
+        <!-- RESTAURANTS DÉTAILLÉS -->
+        <div class="category">
+            <h2><span class="icon">🍽️</span> Guide Restaurants Complet - Séjour 16-23 Août</h2>
+            
+            <!-- RESTAURANTS SAVOYARDS TRADITIONNELS -->
+            <div style="margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;">🧀 Restaurants Savoyards Traditionnels</h3>
+                <p style="color: #7f8c8d; margin-bottom: 1.5rem;">Parfait pour découvrir les spécialités locales : tartiflette, reblochonnade, crozets, fondue</p>
+                
+                <div class="items-grid">
+                    <div class="item">
+                        <h3>🏔️ Le Chalet de la Pricaz</h3>
+                        <div class="price">Tartiflette 20€ | Raclette 25€</div>
+                        <p>Col de la Forclaz (30min) - Vue panoramique sur le lac, spot de parapente juste à côté. Ouvert midi et soir tous les jours en été.</p>
+                        <div class="highlights">
+                            <span class="highlight">Vue panoramique 180°</span>
+                            <span class="highlight">Col de la Forclaz</span>
+                            <span class="highlight">Parapente</span>
+                        </div>
+                        <a href="https://www.chaletlapricaz.com/" class="link" target="_blank">Site officiel</a>
+                    </div>
+
+                    <div class="item">
+                        <h3>🌅 Le Balcon du Lac</h3>
+                        <div class="price">Budget 10-20€/pers</div>
+                        <p>Col de la Forclaz (30min) - Cuisine savoyarde traditionnelle, escalope savoyarde. Vue imprenable, idéal pour coucher de soleil.</p>
+                        <div class="highlights">
+                            <span class="highlight">Coucher de soleil</span>
+                            <span class="highlight">Vue imprenable</span>
+                            <span class="highlight">Gaufres l'après-midi</span>
+                        </div>
+                        <a href="https://www.lebalcondulac-annecy.com/" class="link" target="_blank">Site officiel</a>
+                    </div>
+
+                    <div class="item">
+                        <h3>🍷 Le Zinc à Raoul</h3>
+                        <div class="price">30-40€/pers</div>
+                        <p>Vieille ville - Spécialités savoyardes dans une ambiance authentique. 11 rue du Pont Morens - Ouvert tous les jours sauf mardi.</p>
+                        <div class="highlights">
+                            <span class="highlight">Vieille ville</span>
+                            <span class="highlight">Ambiance authentique</span>
+                            <span class="highlight">Plats généreux</span>
+                        </div>
+                        <a href="https://lezincaraoul.com/" class="link" target="_blank">Site officiel</a>
+                    </div>
+
+                    <div class="item">
+                        <h3>🔥 Le Ramoneur Savoyard</h3>
+                        <div class="price">30-40€/pers</div>
+                        <p>Centre Annecy - Fondue, tartiflette, raclette, brunch possible. Restaurant du terroir savoyard reconnu.</p>
+                        <div class="highlights">
+                            <span class="highlight">Terroir reconnu</span>
+                            <span class="highlight">Brunch possible</span>
+                            <span class="highlight">Centre-ville</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIZZERIAS & ITALIEN -->
+            <div style="margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;">🍕 Pizzerias & Italien</h3>
+                
+                <div class="items-grid">
+                    <div class="item">
+                        <h3>🏆 The Little Italy</h3>
+                        <div class="price">10-20€/pers</div>
+                        <p>Centre-ville - Élue 8ème meilleure pizzeria de France (2016). Produits italiens authentiques (95% d'Italie). Tiramisu incontournable.</p>
+                        <div class="highlights">
+                            <span class="highlight">8ème de France</span>
+                            <span class="highlight">95% produits italiens</span>
+                            <span class="highlight">Terrasse 50 places</span>
+                        </div>
+                        <a href="https://www.thelittleitalyannecy.fr/" class="link" target="_blank">Site officiel</a>
+                    </div>
+
+                    <div class="item">
+                        <h3>🍝 Casa Nostra</h3>
+                        <div class="price">10-20€/pers</div>
+                        <p>Annecy-le-Vieux - Pizzas + pâtes "Rustichella d'Abruzzo". Linguine carbonara 17€, Escalope milanaise 23€.</p>
+                        <div class="highlights">
+                            <span class="highlight">Pâtes authentiques</span>
+                            <span class="highlight">À emporter</span>
+                            <span class="highlight">Annecy-le-Vieux</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>🎭 Maestro Ristorante</h3>
+                        <div class="price">30-40€/pers</div>
+                        <p>Epagny (20min) - Arancini, gnocchis, lasagnes authentiques. Centre Central Park, produits frais.</p>
+                        <div class="highlights">
+                            <span class="highlight">Produits frais</span>
+                            <span class="highlight">Centre commercial</span>
+                            <span class="highlight">Jeudi/vendredi/samedi soir</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BURGERS & CASUAL -->
+            <div style="margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;">🍔 Burgers & Casual</h3>
+                
+                <div class="items-grid">
+                    <div class="item">
+                        <h3>🥚 Le Bouillon Bernadette</h3>
+                        <div class="price">Coquillettes 9.90€ | Œufs mayo 2.80€</div>
+                        <p>Face Impérial Palace - Style brasserie parisienne, pas de réservation. Ouvert 11h45-14h30 et 18h45-22h (fermé dimanche).</p>
+                        <div class="highlights">
+                            <span class="highlight">Pas de réservation</span>
+                            <span class="highlight">Style parisien</span>
+                            <span class="highlight">Budget serré</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>🏝️ Le Bora Bora</h3>
+                        <div class="price">30-40€/pers</div>
+                        <p>Petit port - Burgers de qualité au bord du lac. Ambiance décontractée, vue port. Parfait pour groupes de jeunes.</p>
+                        <div class="highlights">
+                            <span class="highlight">Vue port</span>
+                            <span class="highlight">Groupe jeunes</span>
+                            <span class="highlight">Décontracté</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>🧀 Chez ma Cousine</h3>
+                        <div class="price">Burger BBR 29€ | Bo Bun 26€</div>
+                        <p>Doussard (25min) - Burger "BBR" au reblochon. Pieds dans l'eau, accessible en bateau.</p>
+                        <div class="highlights">
+                            <span class="highlight">Pieds dans l'eau</span>
+                            <span class="highlight">Accessible bateau</span>
+                            <span class="highlight">Burger reblochon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESTAURANTS AU BORD DU LAC -->
+            <div style="margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;">🌊 Restaurants au Bord du Lac</h3>
+                
+                <div class="items-grid">
+                    <div class="item">
+                        <h3>🐟 Le Poisson Rouge</h3>
+                        <div class="price">Filets perche 15€ | Tarte myrtille 9€</div>
+                        <p>Sévrier - Repris par 3 jeunes, cuisine raffinée. Steak de thon, spécialités du lac.</p>
+                        <div class="highlights">
+                            <span class="highlight">Repris par 3 jeunes</span>
+                            <span class="highlight">Cuisine raffinée</span>
+                            <span class="highlight">Spécialités lac</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>🏰 L'Aquarama</h3>
+                        <div class="price">Pizzas 13-18€ | Croque truffe 28€</div>
+                        <p>Angon - Talloires - Accessible en bateau, table privatisée sur ponton. Vue sur château de Duingt.</p>
+                        <div class="highlights">
+                            <span class="highlight">Accessible bateau</span>
+                            <span class="highlight">Ponton privatisé</span>
+                            <span class="highlight">Vue château</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>🏛️ EBO</h3>
+                        <div class="price">Plat du jour 19€ | Tapas</div>
+                        <p>Face plage Albigny - Tapas à partager, concept convivial. Dôme architectural remarquable.</p>
+                        <div class="highlights">
+                            <span class="highlight">Tapas à partager</span>
+                            <span class="highlight">Architecture remarquable</span>
+                            <span class="highlight">Convivial groupes</span>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h3>⭐ Les Cassines</h3>
+                        <div class="price">50€+/pers | Menu 66€</div>
+                        <p>Talloires - Chef Pierre-Christophe Égaux. Truite entière à partager 31€/pers. Menu 6 étapes 66€ le soir.</p>
+                        <div class="highlights">
+                            <span class="highlight">Chef reconnu</span>
+                            <span class="highlight">Truite à partager</span>
+                            <span class="highlight">Expérience culinaire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONSEILS PRATIQUES -->
+            <div style="background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%); border-radius: 15px; padding: 2rem; margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem;">⚠️ Conseils Pratiques Août</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                    <div>
+                        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">📞 Réservations</h4>
+                        <p style="color: #5a6c7d; font-size: 0.9rem;">Réserver 24-48h à l'avance minimum. Terrasses très demandées en soirée.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">👥 Spécial Groupes de 6</h4>
+                        <p style="color: #5a6c7d; font-size: 0.9rem;">Le Bouillon Bernadette : Pas de réservation. EBO et Cassines : parfaits pour partager.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">💰 Budget Recommandé</h4>
+                        <p style="color: #5a6c7d; font-size: 0.9rem;">Décontracté: 15-25€ • Bord de lac: 30-45€ • Gastronomique: 50-80€</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LIENS TIKTOK ORIGINAUX -->
+            <div style="margin: 2rem 0;">
+                <h3 style="color: #2c3e50; margin-bottom: 1rem; font-size: 1.5rem;">📱 Découvertes TikTok</h3>
+                <div class="items-grid">
+                    <div class="item">
+                        <h3>🥾 Chemin2Traverse - Conseils Food</h3>
+                        <p>Découvertes culinaires et bonnes adresses recommandées par des locaux passionnés.</p>
+                        <div class="highlights">
+                            <span class="highlight">Conseils locaux</span>
+                            <span class="highlight">Authentique</span>
+                        </div>
+                        <a href="https://www.tiktok.com/@chemin2traverse_/video/7516179805197536514" class="link" target="_blank">Voir conseils #1</a>
+                        <a href="https://www.tiktok.com/@chemin2traverse_/video/7531690382481132802" class="link" target="_blank">Voir conseils #2</a>
+                        <a href="https://www.tiktok.com/@chemin2traverse_/video/7518789029400186135" class="link" target="_blank">Voir conseils #3</a>
+                    </div>
+
+                    <div class="item">
+                        <h3>📸 Autres Découvertes</h3>
+                        <p>Plus de spots et bonnes adresses partagés par la communauté TikTok.</p>
+                        <div class="highlights">
+                            <span class="highlight">Variété</span>
+                            <span class="highlight">Tendance</span>
+                        </div>
+                        <a href="https://www.tiktok.com/@manon.robbb/photo/7526667026723589398" class="link" target="_blank">Spots Manon</a>
+                        <a href="https://www.tiktok.com/@lesspotsderachel/video/7537006721567395094" class="link" target="_blank">Spots Rachel</a>
+                        <a href="https://www.tiktok.com/@ananas_travell/photo/7532490110412147990" class="link" target="_blank">Ananas Travel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RANDONNÉES -->
+        <div class="category">
+            <h2><span class="icon">🥾</span> Randonnées & Nature</h2>
+            <div class="items-grid">
+                <div class="item">
+                    <h3>🏔️ Pas du Roc</h3>
+                    <p>Randonnée panoramique offrant une vue imprenable sur le lac d'Annecy et les montagnes environnantes.</p>
+                    <div class="highlights">
+                        <span class="highlight">Vue panoramique</span>
+                        <span class="highlight">Difficulté moyenne</span>
+                        <span class="highlight">Photo spot</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@laurineadri/video/7490257007027424535" class="link" target="_blank">Voir la randonnée</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏔️ Spots Snowleader</h3>
+                    <p>Découvertes de spots nature et randonnées recommandés par les experts en équipement outdoor.</p>
+                    <div class="highlights">
+                        <span class="highlight">Experts outdoor</span>
+                        <span class="highlight">Spots nature</span>
+                        <span class="highlight">Équipement pro</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@snowleader74/photo/7507637903145864450" class="link" target="_blank">Voir les spots</a>
+                </div>
+
+                <div class="item">
+                    <h3>📸 Louise GCN - Randos Photos</h3>
+                    <p>Randonnées et points de vue parfaits pour la photographie de paysage dans les environs d'Annecy.</p>
+                    <div class="highlights">
+                        <span class="highlight">Photographie</span>
+                        <span class="highlight">Points de vue</span>
+                        <span class="highlight">Paysages</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@louise_gcn/photo/7529222476648271126" class="link" target="_blank">Voir les spots photo</a>
+                </div>
+
+                <div class="item">
+                    <h3>🌿 Jardin Alandscvr</h3>
+                    <p>Découverte de jardins et espaces verts secrets autour d'Annecy pour une promenade ressourçante.</p>
+                    <div class="highlights">
+                        <span class="highlight">Espaces verts</span>
+                        <span class="highlight">Secrets</span>
+                        <span class="highlight">Ressourçant</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@alandscvr/video/7486075321062542614" class="link" target="_blank">Découvrir les jardins</a>
+                </div>
+
+                <div class="item">
+                    <h3>🥾 Chemin2Traverse - Randos</h3>
+                    <p>Plus de recommandations de randonnées et sentiers secrets partagés par les guides locaux.</p>
+                    <div class="highlights">
+                        <span class="highlight">Sentiers secrets</span>
+                        <span class="highlight">Guides locaux</span>
+                        <span class="highlight">Hors des sentiers</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@chemin2traverse_/video/7521310556687551766" class="link" target="_blank">Voir les randonnées</a>
+                </div>
+
+                <div class="item">
+                    <h3>💧 Cascade d'Angon</h3>
+                    <p>Belle cascade accessible par un sentier de randonnée facile, parfaite pour une sortie nature rafraîchissante.</p>
+                    <div class="highlights">
+                        <span class="highlight">Facile d'accès</span>
+                        <span class="highlight">Cascade</span>
+                        <span class="highlight">Nature</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@alandscvr/video/7509024259268807958" class="link" target="_blank">Découvrir la cascade</a>
+                </div>
+
+                <div class="item">
+                    <h3>🌊 Gorges du Sierro</h3>
+                    <p>Gorges spectaculaires avec parcours de randonnée dans un environnement sauvage et préservé.</p>
+                    <div class="highlights">
+                        <span class="highlight">Gorges</span>
+                        <span class="highlight">Aventure</span>
+                        <span class="highlight">Nature sauvage</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@maxfly_972/video/7513470053921180950" class="link" target="_blank">Explorer les gorges</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏔️ Col de la Forclaz</h3>
+                    <p>Point de vue emblématique sur le lac d'Annecy, accessible en voiture ou à pied pour les plus sportifs.</p>
+                    <div class="highlights">
+                        <span class="highlight">Vue emblématique</span>
+                        <span class="highlight">Accessible en voiture</span>
+                        <span class="highlight">Parapente</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@unmondedeuxdindes/video/7271358565976231200" class="link" target="_blank">Voir le col</a>
+                </div>
+
+                <div class="item">
+                    <h3>🌊 Gorges du Fier</h3>
+                    <p>Site naturel exceptionnel avec passerelles suspendues au-dessus des gorges vertigineuses.</p>
+                    <div class="highlights">
+                        <span class="highlight">Passerelles</span>
+                        <span class="highlight">Site naturel</span>
+                        <span class="highlight">Spectaculaire</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@alandscvr/video/7506469190782536982" class="link" target="_blank">Visiter les gorges</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIEUX À VISITER -->
+        <div class="category">
+            <h2><span class="icon">🏰</span> Lieux à Visiter</h2>
+            <div class="items-grid">
+                <div class="item">
+                    <h3>🏛️ Palais de l'Île</h3>
+                    <p>Monument historique emblématique d'Annecy, ancienne prison située sur un îlot au milieu du Thiou.</p>
+                    <div class="highlights">
+                        <span class="highlight">Monument historique</span>
+                        <span class="highlight">Centre-ville</span>
+                        <span class="highlight">Incontournable</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@jennifer.roche/video/7239064250575015194" class="link" target="_blank">Découvrir le palais</a>
+                </div>
+
+                <div class="item">
+                    <h3>🌸 Jardins Secrets de Vaulx</h3>
+                    <p>Jardins thématiques enchanteurs offrant une promenade poétique dans un cadre romantique et fleuri.</p>
+                    <div class="highlights">
+                        <span class="highlight">Jardins thématiques</span>
+                        <span class="highlight">Romantique</span>
+                        <span class="highlight">Détente</span>
+                    </div>
+                    <a href="https://www.google.com/search?client=opera&q=jardfins+secrets+de+vaulx" class="link" target="_blank">Visiter les jardins</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏘️ Vieille Ville d'Annecy</h3>
+                    <p>Centre historique pittoresque avec ses canaux, ses maisons colorées et ses ruelles pavées pleines de charme.</p>
+                    <div class="highlights">
+                        <span class="highlight">Centre historique</span>
+                        <span class="highlight">Canaux</span>
+                        <span class="highlight">Shopping</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@aveclesyeuxdemilie/video/7527722734730677526" class="link" target="_blank">Explorer la vieille ville</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏔️ Talloires</h3>
+                    <p>Village pittoresque au bord du lac, réputé pour ses paysages magnifiques et son ambiance authentique.</p>
+                    <div class="highlights">
+                        <span class="highlight">Village authentique</span>
+                        <span class="highlight">Bord de lac</span>
+                        <span class="highlight">Paysages</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@domiidoom/video/7526096302820592914" class="link" target="_blank">Découvrir Talloires</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAGES -->
+        <div class="category">
+            <h2><span class="icon">🏖️</span> Plages & Baignade</h2>
+            <div class="items-grid">
+                <div class="item">
+                    <h3>🏖️ Plage de la Brune - Veyrier</h3>
+                    <p>Plage aménagée avec pelouse, idéale pour la baignade en famille avec vue magnifique sur le lac et les montagnes.</p>
+                    <div class="highlights">
+                        <span class="highlight">Plage aménagée</span>
+                        <span class="highlight">Famille</span>
+                        <span class="highlight">Pelouse</span>
+                    </div>
+                    <a href="https://www.lac-annecy.com/plage-espace-de-baignade/plage-de-la-brune-veyrier-du-lac/" class="link" target="_blank">Infos plage</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACTIVITÉS -->
+        <div class="category">
+            <h2><span class="icon">🎯</span> Activités & Sports</h2>
+            <div class="items-grid">
+                <div class="item">
+                    <h3>🛷 Luge d'Été</h3>
+                    <p>Descente en luge sur rails au milieu de la nature, activité ludique pour toute la famille avec sensations garanties.</p>
+                    <div class="highlights">
+                        <span class="highlight">Sensations</span>
+                        <span class="highlight">Famille</span>
+                        <span class="highlight">Fun</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@marinedugrenier/video/7531068421220338966" class="link" target="_blank">Voir la luge</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏍️ Quad</h3>
+                    <div class="price">À partir de 100€</div>
+                    <p>Balades en quad pour explorer les sentiers de montagne et découvrir la région sous un angle aventureux.</p>
+                    <div class="highlights">
+                        <span class="highlight">Aventure</span>
+                        <span class="highlight">Montagne</span>
+                        <span class="highlight">Sensations</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@annecy.quads/video/7525889946624773398" class="link" target="_blank">Réserver quad</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏍️ Quad Aurelia - Infos</h3>
+                    <p>Informations détaillées sur les sorties quad avec tarifs et conseils pratiques pour une expérience réussie.</p>
+                    <div class="highlights">
+                        <span class="highlight">Infos pratiques</span>
+                        <span class="highlight">Tarifs détaillés</span>
+                        <span class="highlight">Conseils</span>
+                    </div>
+                    <a href="https://www.tiktok.com/@aureliakhl/photo/7517345301468876054" class="link" target="_blank">Voir les infos</a>
+                </div>
+
+                <div class="item">
+                    <h3>🏄‍♂️ Paddle / Pédalo</h3>
+                    <p>Location d'équipements nautiques pour profiter du lac d'Annecy : paddle, pédalo, bateaux électriques.</p>
+                    <div class="highlights">
+                        <span class="highlight">Sports nautiques</span>
+                        <span class="highlight">Lac d'Annecy</span>
+                        <span class="highlight">Location</span>
+                    </div>
+                    <a href="https://locationbateauxannecy.com/pedalo-paddle/" class="link" target="_blank">Louer matériel</a>
+                </div>
+
+                <div class="item">
+                    <h3>🌊 Canyoning</h3>
+                    <p>Descente de canyons avec sauts, toboggans naturels et rappels dans les gorges alpines environnantes.</p>
+                    <div class="highlights">
+                        <span class="highlight">Adrénaline</span>
+                        <span class="highlight">Canyons alpins</span>
+                        <span class="highlight">Encadré</span>
+                    </div>
+                    <a href="https://montemedio.com/canyoning-annecy/" class="link" target="_blank">Monte Medio</a>
+                    <a href="https://www.manawa.com/fr/destinations/1504-annecy/1192-canyoning" class="link" target="_blank">Manawa</a>
+                </div>
+
+                <div class="item">
+                    <h3>🚴‍♂️ Vélo</h3>
+                    <div class="price">15€ les 2h</div>
+                    <p>Location de vélos pour parcourir les pistes cyclables autour du lac et découvrir la région à votre rythme.</p>
+                    <div class="highlights">
+                        <span class="highlight">Pistes cyclables</span>
+                        <span class="highlight">Tour du lac</span>
+                        <span class="highlight">Écologique</span>
+                    </div>
+                    <a href="https://www.k2outdoor-annecy.com" class="link" target="_blank">K2 Outdoor</a>
+                    <a href="https://velac.lokki.rent/" class="link" target="_blank">Velac Location</a>
+                    <a href="https://www.aixlesbains-rivieradesalpes.com/activites/cyclo-et-vtt/" class="link" target="_blank">Aix-les-Bains</a>
+                </div>
+
+                <div class="item">
+                    <h3>🎰 Casino d'Annecy</h3>
+                    <p>Casino moderne avec machines à sous, jeux de table et restaurant pour une soirée divertissante.</p>
+                    <div class="highlights">
+                        <span class="highlight">Jeux</span>
+                        <span class="highlight">Restaurant</span>
+                        <span class="highlight">Soirée</span>
+                    </div>
+                    <a href="https://www.casino-annecy.com/" class="link" target="_blank">Visiter le casino</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
